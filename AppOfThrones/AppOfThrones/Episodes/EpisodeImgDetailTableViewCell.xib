@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EpisodeImgDetailTableViewCell" id="v8l-hO-YSp" userLabel="EpisodeImgDetailTableViewCell" customClass="EpisodeImgDetailTableViewCell" customModule="AppOfThrones" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="390"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="v8l-hO-YSp" id="beF-Eh-hLh">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="390"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZKc-ny-OWD" userLabel="ImageEpisode">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="390"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="390" id="3yq-C0-oi9"/>
+                            <constraint firstAttribute="width" constant="414" id="YbY-Ng-cfL"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="ZKc-ny-OWD" firstAttribute="top" secondItem="beF-Eh-hLh" secondAttribute="top" id="NcH-mi-4k8"/>
+                    <constraint firstItem="ZKc-ny-OWD" firstAttribute="leading" secondItem="beF-Eh-hLh" secondAttribute="leading" id="l8U-QC-26M"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageEpisode" destination="ZKc-ny-OWD" id="Zqq-jH-ZWU"/>
+            </connections>
+            <point key="canvasLocation" x="-223.18840579710147" y="-978.34821428571422"/>
+        </tableViewCell>
+    </objects>
+</document>
